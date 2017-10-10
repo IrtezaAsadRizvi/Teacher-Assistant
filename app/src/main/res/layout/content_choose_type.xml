@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bd.edu.ulab.teacherassistant.choose_type"
+    tools:showIn="@layout/app_bar_choose_type">
+
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE TYPE"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/page_title"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/meeting_btn"
+            android:layout_width="165dp"
+            android:layout_height="125dp"
+            android:layout_margin="5dp"
+            android:height="125dp"
+            android:width="165dp"
+            android:background="@drawable/meeting_btn"
+            android:text="" />
+
+        <Button
+            android:id="@+id/class_btn"
+            android:layout_width="165dp"
+            android:layout_height="125dp"
+            android:layout_margin="5dp"
+            android:height="125dp"
+            android:width="165dp"
+            android:background="@drawable/class_btn"
+            android:text="" />
+        <Button
+            android:id="@+id/workshop_btn"
+            android:layout_width="165dp"
+            android:layout_height="125dp"
+            android:layout_margin="5dp"
+            android:height="125dp"
+            android:width="165dp"
+            android:background="@drawable/workshop_btn"
+            android:text="" />
+        <Button
+            android:id="@+id/conference_btn"
+            android:layout_width="165dp"
+            android:layout_height="125dp"
+            android:layout_margin="5dp"
+            android:height="125dp"
+            android:width="165dp"
+            android:background="@drawable/conference_btn"
+            android:text="" />
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bd.edu.ulab.teacherassistant.Developers"
+    tools:showIn="@layout/app_bar_developers">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/main_dev"
+       android:onClick="irteza_fb">
+       <ImageView
+           android:id="@+id/dev_pic"
+           android:layout_width="64dp"
+           android:layout_height="64dp"
+           android:layout_marginLeft="34dp"
+           android:layout_marginStart="34dp"
+           android:layout_marginTop="10dp"
+           app:srcCompat="@drawable/dev_pic"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:paddingBottom="10dp"
+           />
+
+       <TextView
+           android:id="@+id/dev_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/dev_pic"
+           android:layout_marginLeft="42dp"
+           android:layout_marginStart="22dp"
+           android:layout_toEndOf="@+id/dev_pic"
+           android:layout_toRightOf="@+id/dev_pic"
+           android:padding="5dp"
+           android:text="Irteza Asad"
+           android:textSize="16dp"
+           android:textColor="#222"/>
+       <TextView
+           android:id="@+id/dev_details"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/dev_pic"
+           android:layout_marginLeft="42dp"
+           android:layout_marginStart="27dp"
+           android:layout_marginTop="25dp"
+           android:layout_toEndOf="@+id/dev_pic"
+           android:layout_toRightOf="@+id/dev_pic"
+           android:text="irteza.asad.cse@ulab.edu.bd" />
+
+   </RelativeLayout>
+
+    <TextView
+        android:id="@+id/other_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_dev"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="67dp"
+        android:text="Other Collaborators"
+        android:textColor="#222"
+        android:textSize="16dp"/>
+
+    <ListView
+        android:id="@+id/others"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/other_title"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="21dp"
+        />
+
+
+</RelativeLayout>

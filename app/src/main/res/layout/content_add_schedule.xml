@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bd.edu.ulab.teacherassistant.add_schedule"
+    tools:showIn="@layout/app_bar_add_schedule">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/logo_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo_bar" />
+
+    <EditText
+        android:id="@+id/s_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo_bar"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignLeft="@+id/logo_bar"
+        android:layout_alignStart="@+id/logo_bar"
+        android:layout_alignRight="@+id/logo_bar"
+        android:layout_alignEnd="@+id/logo_bar" />
+
+    <Button
+        android:id="@+id/set_date"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:text="set date"
+        android:background="@drawable/form_btn"
+        android:layout_alignRight="@+id/s_name"
+        android:layout_alignEnd="@+id/s_name"
+        android:layout_alignLeft="@+id/s_name"
+        android:layout_alignStart="@+id/s_name" />
+
+    <Button
+        android:id="@+id/set_time"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set_date"
+        android:layout_marginTop="5dp"
+        android:text="set time"
+        android:background="@drawable/form_btn"
+        android:layout_alignRight="@+id/set_date"
+        android:layout_alignEnd="@+id/set_date"
+        android:layout_alignLeft="@+id/set_date"
+        android:layout_alignStart="@+id/set_date" />
+
+    <Button
+        android:id="@+id/importance"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set_time"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:background="@drawable/importance_btn"
+        android:layout_alignRight="@+id/set_time"
+        android:layout_alignEnd="@+id/set_time"
+        android:layout_alignLeft="@+id/set_time"
+        android:layout_alignStart="@+id/set_time" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/importance"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:background="@drawable/submit_btn"
+        android:layout_alignRight="@+id/importance"
+        android:layout_alignEnd="@+id/importance"
+        android:layout_alignLeft="@+id/importance"
+        android:layout_alignStart="@+id/importance" />
+</RelativeLayout>

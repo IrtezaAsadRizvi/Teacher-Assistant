@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bd.edu.ulab.teacherassistant.About"
+    tools:showIn="@layout/app_bar_about">
+
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="all rights reserved © IrtezaAsad2017"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ABOUT"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="left"
+        android:layout_marginTop="100dp"
+        android:text="This is an app dedicated to Teachers and their everyday life. This app helps you reminding of your every task you might have day to day like a meeting you have to attend or a class you might have to take." />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/instructions_title"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="* Press the + sign in the homepage to add a schedule.\n\n * Choose type and provide the informations\n\n * press ADD SCHEDULE button\n\n * In home page press and hold on a schedule to DELETE " />
+
+    <TextView
+        android:id="@+id/instructions_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="INSTRUCTIONS"
+        android:textSize="20dp"/>
+</RelativeLayout>
